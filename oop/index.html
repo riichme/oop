@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MINI LIBRARY</title>
+  <script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
+  <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+</head>
+
+<body>
+<H1>MINI LIBRARY</H1>
+
+  <div id="table-gridjs"></div>
+
+  <script>
+    new gridjs.Grid({
+      columns: ["Name", "Email",],
+      data: [
+        ["RISTMI", "RISTMI@example.com"],
+        ["ANDI", "ANDI@gmail.com"],
+      
+      ]
+    }).render(document.getElementById("table-gridjs"));
+  </script>
+
+</body>
+
+</html>
